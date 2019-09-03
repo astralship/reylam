@@ -1,0 +1,281 @@
+img {
+  max-width: 100% !important;
+}
+
+[data-slide] { // so that there is initial fade-in effect
+	display: none;
+}
+
+// fields going to the same line
+.field.half {
+	width: 50%;
+	float: left;
+}
+.field.half.name {
+	padding-right: 10px;
+}
+.field.half.email {
+	padding-left: 10px;
+}
+.field label {
+	text-align: left;
+}
+
+.streetView-wrapper iframe{
+    pointer-events: none;
+}
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+
+#one li {
+  text-align: left;
+}
+
+.icons img {
+  height: 40px;
+}
+
+#banner p {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+#banner p strong {
+  font-weight: 900;
+}
+
+#footer .copyright li {
+  margin-left: 0;
+}
+
+.wip {
+  margin-bottom: 40px;
+  font-size: 2em;
+  background-color: #f0ad4e;
+  display: inline-block;
+  padding: .2em .6em .3em;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+}
+
+.quote {
+  font-size: 1.6em;
+  font-weight:200;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  margin: 150px 20x 20px 20px;
+  max-width: 650px;
+}
+
+.quoteAttrib {
+  font-size: 1.6em;
+  color: #AAA;
+  font-weight:200;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  margin: 0px 150px 20px 150px;
+}
+
+.ready {
+  margin-bottom: 40px;
+  font-size: 2em;
+  background-color: #066600;
+  display: inline-block;
+  padding: .2em .6em .3em;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+}
+
+// BORROWED FROM DAN'S WEBSITE
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#timeline {
+  background: black;
+  position: relative;
+}
+
+.timeline {
+  list-style-type: none;
+  position: relative;
+  padding-left: 1em;
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline:before {
+  display: block;
+  content: '';
+  height: 100%;
+  border-left: solid 1px #6c87da;
+  position: absolute;
+  left: 3px;
+  top: 0;
+  margin: 8px 0;
+}
+
+.timeline li {
+  position: relative;
+  padding: 0 1em;
+  margin-bottom: 2em;
+}
+
+.timeline li label {
+  display: block;
+  height: 7px;
+  width: 7px;
+  position: absolute;
+  left: -1em;
+  background: #6c87da;
+  border-radius: 50%;
+  top: 8px;
+}
+
+.timeline p {
+  font-size: 14pt;
+  font-weight: 100;
+  margin-top: 0;
+  color: #aaa;
+}
+
+.timeline strong {
+  font-size: 16pt;
+}
+
+.timeline li.done strong {
+  opacity: 0.4;
+}
+
+
+
+.markupButt a {
+  margin-right: 3px;
+}
+
+.markupButt .button {
+  padding: 0 1em;
+}
+.markupButt .button.special strong {
+  color: white;
+}
+
+.markupDesc .description { 
+  display: none;
+  padding: 5px 0 0 5px;
+  font-style: italic;
+}
+.markupDesc .description.active { // TODO: add some fancy transition effect: https://www.impressivewebs.com/animate-display-block-none/
+  display: block;
+}
+
+
+#stripe-form { height: 35px; }
+#stripe-button {
+
+  display: inline-block;
+  margin-bottom: 10px;
+  box-shadow: rgba(255, 255, 255, 0.247059) 0px 1px 0px 0px inset;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  height: 30px;
+  min-height: 30px;
+  position: relative;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.247059) 0px -1px 0px;
+  width: 140px;
+  align-self: flex-start;
+  perspective-origin: 58.5312px 15px;
+  transform-origin: 58.5312px 15px;
+  background: rgb(18, 117, 255) linear-gradient(rgb(125, 197, 238), rgb(0, 140, 221) 85%, rgb(48, 162, 228)) repeat scroll 0% 0% / auto padding-box border-box;
+  border: 0px none rgb(255, 255, 255);
+  border-radius: 4px 4px 4px 4px;
+  font: normal normal bold normal 14px / 30px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  outline: rgb(255, 255, 255) none 0px;
+  padding: 0px 12px;
+  text-decoration: none;
+}
+
+
+#header h1 a {
+  display: inline
+}
+
+#header .investment {
+  margin-left: 10px;
+  font-size: 0.8em;
+  text-transform: initial;
+  border-bottom: 2px dotted white;
+  padding-bottom: 3px;
+}
+
+ul.margin li {
+  margin-bottom: 8px;
+}
+
+h3 em {
+  font-weight: normal;
+  font-size: 0.8em;
+}
+
+@media (max-width: 480px) { // Too much stuff, overllaping hamburger
+  .hide-on-mobile {
+    display: none;
+  }
+}
+
+
+// https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+h2 a {
+  border-bottom: dotted 3px
+}
+
+.strike{
+    position: relative;
+}
+
+.strike::after{
+    content: '';
+    border-bottom: 4px solid white;
+    position: absolute;
+    left: 0;
+    top: 40%;
+    width: 100%;
+}

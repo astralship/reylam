@@ -1,0 +1,42 @@
+<!-- Footer -->
+<footer id="footer">
+
+  <ul class="copyright" style="font-size: 0.7em">
+    {% assign sorted_pages = site.pages | sort:"order" %}
+    {% for node in sorted_pages %}
+      {% if node.title %}
+        {% if node.order %}
+          <li><a href="{{node.url}}">{{node.title}}</a></li>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+  <ul class="icons" style="margin-top:10px">
+    <li><img src="images/icons/1.png"></li>
+    <li><img src="images/icons/2.png"></li>
+    <li><img src="images/icons/3.png"></li>
+    <li><img src="images/icons/4.png"></li>
+    <li><img src="images/icons/5.png"></li>
+  </ul>
+
+  <ul class="icons">
+    {% for socloc in site.social %}
+    {% if socloc[1] %}
+    {% if socloc[0] == 'email' %}
+    <li><a target="_blank" href="{{ socloc[1] }}" class="icon fa-envelope-o"
+           ><span class="label">E-mail</span></a></li>
+    {% else %}
+    <li><a target="_blank" href="{{ socloc[1] }}" class="icon fa-{{ socloc[0] }}"
+           ><span class="label">{{ socloc[0] }}</span></a></li>
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+  </ul>
+  <ul class="copyright" style="font-size: 0.7em">
+    <li>2017-2019 astralship.org</li>
+    <li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+    <li>Built with: <a href="http://jekyllrb.com" target="_blank">Jekyll</a></li>
+    <li>Hosted on: <a href="https://github.com/astralship/astralship.github.io" target="_blank">Github</a></li>
+  </ul>
+</footer>
