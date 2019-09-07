@@ -992,7 +992,7 @@ $baseurl: '{{ site.baseurl }}/images';
 				color: rgb(170,175,175);
 			}
 			&:nth-child(#{2}) {
-				background-color: blue;
+				background-color: red;
 				color: rgb(170,175,175);
 			}
 		}
