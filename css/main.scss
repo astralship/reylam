@@ -985,16 +985,13 @@ $baseurl: '{{ site.baseurl }}/images';
 		}
 
 		@for $i from 1 through _misc(max-spotlights) {
-			$j: 0.5+0.075 * $i;
+			$j: 0.075 * $i;
 
 			&:nth-child(#{$i}) {
-				background-color: rgba(0,0,120, $j);
-				color: rgb(170,175,175);
+				background-color: rgba(0,0,0, $j);
+				color: #858787;
 			}
-			&:nth-child(#{2}) {
-				background-color: red;
-				color: rgb(170,175,175);
-			}
+			
 		}
 
 		@include breakpoint(large) {
